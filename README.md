@@ -8,18 +8,18 @@ Example:
 var multiplex = require('multiplex-loader');
 
 module.exports = {
-	module: {
-		loaders: [
-			{
-				test: /\.css$/,
-				loader: multiplex({
-					placeholder: 'resize-image?placeholder=303',
-					srcset: 'image-webpack!resize-image?sizes[]=303w,sizes[]=606w',
-					src: 'image-loader',
-				}),
-			},
-		],
-	},
+  module: {
+    loaders: [
+      {
+        test: /\.css$/,
+        loader: multiplex({
+          placeholder: 'resize-image?placeholder=303',
+          srcset: 'image-webpack!resize-image?sizes[]=303w,sizes[]=606w',
+          src: 'image-loader',
+        }),
+      },
+    ],
+  },
 };
 ```
 

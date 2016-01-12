@@ -4,21 +4,34 @@
   "description": "A loader that splits a module into multiple modules loaded with different loaders.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "webpack -p --config test/webpack.config.js",
+    "lint": "eslint *.js lib/*.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/macropodhq/multiplex-loader.git"
+    "url": "git://github.com/kavu/multiplex-loader.git"
   },
   "keywords": [
     "webpack",
     "loader",
     "multi"
   ],
-  "author": "Jessica Stokes <jessica.stokes@macropod.com>",
+  "contributors": [
+    "Jessica Stokes <jessica.stokes@macropod.com>",
+    "Max Riveiro <kavu13@gmail.com>"
+  ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/macropodhq/multiplex-loader/issues"
+    "url": "https://github.com/kavu/multiplex-loader/issues"
   },
-  "homepage": "https://github.com/macropodhq/multiplex-loader"
+  "homepage": "https://github.com/kavu/multiplex-loader",
+  "devDependencies": {
+    "eslint": "^1.10.3",
+    "eslint-plugin-nodeca": "^1.0.3",
+    "file-loader": "^0.8.5",
+    "webpack": "^1.12.11"
+  },
+  "dependencies": {
+    "loader-utils": "^0.2.12"
+  }
 }
