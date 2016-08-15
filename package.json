@@ -4,8 +4,8 @@
   "description": "A loader that splits a module into multiple modules loaded with different loaders.",
   "main": "index.js",
   "scripts": {
-    "test": "webpack -p --config test/webpack.config.js",
-    "lint": "eslint *.js lib/*.js"
+    "test": "node_modules/webpack/bin/webpack.js -p --config test/webpack.config.js",
+    "lint": "node_modules/eslint/bin/eslint.js *.js lib/*.js"
   },
   "repository": {
     "type": "git",
@@ -26,12 +26,11 @@
   },
   "homepage": "https://github.com/kavu/multiplex-loader",
   "devDependencies": {
-    "eslint": "^1.10.3",
-    "eslint-plugin-nodeca": "^1.0.3",
-    "file-loader": "^0.8.5",
-    "webpack": "^1.12.11"
+    "eslint": "^3.3.0",
+    "file-loader": "^0.9.0",
+    "webpack": "^1.13.1"
   },
   "dependencies": {
-    "loader-utils": "^0.2.12"
+    "loader-utils": "^0.2.15"
   }
 }
